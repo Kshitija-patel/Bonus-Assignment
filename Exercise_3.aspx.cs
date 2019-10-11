@@ -23,6 +23,7 @@ namespace BonusAssignment
                     //calculate final price
                     double total = x * (0.25);
 
+                    //initialise leftover ticket to zero
                     int remainingTicket = 0;
 
                     //number of tickets under 50(including 50) are bundled individually
@@ -41,7 +42,7 @@ namespace BonusAssignment
                         }
                         remainingTicket = x % 2;
                     }
-                    //number of tickets between 151(including 51) and 300(including 300) are bundled in sets of 3
+                    //number of tickets between 151(including 151) and 300(including 300) are bundled in sets of 3
                     else if (x > 150 && x <= 300)
                     {
                         for (int i = 3; i <= x; i += 3)
